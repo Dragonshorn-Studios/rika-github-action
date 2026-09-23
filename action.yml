@@ -1,0 +1,35 @@
+name: rika
+description: >-
+  Run a rikacli command against a Rika instance. Downloads the rikacli that
+  the instance itself serves (GET /cli), so the CLI always matches the API.
+author: Dragonshorn-Studios
+branding:
+  icon: bookmark
+  color: red
+
+inputs:
+  rika_url:
+    description: 'Base URL of the Rika instance (RIKA_URL).'
+    required: false
+    default: 'https://rika.cloud'
+  token:
+    description: 'Rika API token (RIKA_TOKEN).'
+    required: true
+  team:
+    description: 'Team slug (RIKA_TEAM). Not needed for export.'
+    required: false
+  project:
+    description: 'Project slug (RIKA_PROJECT). Not needed for export.'
+    required: false
+  command:
+    description: >-
+      rikacli command and arguments, e.g. "pin --bump=patch" or "deploy production".
+    required: true
+
+outputs:
+  stdout:
+    description: 'Captured standard output of the rikacli command.'
+
+runs:
+  using: node20
+  main: dist/index.js
