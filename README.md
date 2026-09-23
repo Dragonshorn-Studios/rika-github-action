@@ -40,7 +40,7 @@ Each `uses:` runs one command; add more steps for more commands:
 | ----------- | -------- | -------------------- | ------------------------------------------------ |
 | `token`     | yes      | —                    | Rika API token (use a secret).                   |
 | `command`   | yes      | —                    | rikacli command + args, e.g. `pin --bump=patch`. |
-| `rika_url`  | no       | `https://rika.cloud` | Base URL of your (self-hosted) Rika instance.    |
+| `rika_url`  | no       | `https://versionwithrika.cloud` | Base URL of your (self-hosted) Rika instance. |
 | `team`      | no       | —                    | Team slug. Not needed for `export`.              |
 | `project`   | no       | —                    | Project slug. Not needed for `export`.           |
 

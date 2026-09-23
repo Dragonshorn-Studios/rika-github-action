@@ -32,7 +32,7 @@ function tokenize(command) {
 }
 
 async function main() {
-    const rikaUrl = (getInput('rika_url') || process.env.RIKA_URL || 'https://rika.cloud').replace(/\/+$/, '');
+    const rikaUrl = (getInput('rika_url') || process.env.RIKA_URL || 'https://versionwithrika.cloud').replace(/\/+$/, '');
     const token = getInput('token') || process.env.RIKA_TOKEN;
     const team = getInput('team') || process.env.RIKA_TEAM;
     const project = getInput('project') || process.env.RIKA_PROJECT;

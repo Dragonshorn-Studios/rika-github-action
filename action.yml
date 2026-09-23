@@ -11,7 +11,7 @@ inputs:
   rika_url:
     description: 'Base URL of the Rika instance (RIKA_URL).'
     required: false
-    default: 'https://rika.cloud'
+    default: 'https://versionwithrika.cloud'
   token:
     description: 'Rika API token (RIKA_TOKEN).'
     required: true
